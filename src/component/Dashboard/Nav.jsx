@@ -11,7 +11,7 @@ const Nav = () => {
         backgroundColor: "black",
         height: "100vh",
         // width: "40%",
-        padding: "0 30px",
+        padding: '0 30px',
         position: "fixed",
         left: "0",
         top: "0",

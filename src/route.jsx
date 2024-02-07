@@ -3,6 +3,8 @@ import App from "./App";
 import LandingPage from "./component/landingPage/LandingPage";
 import Dashboard from "./component/Dashboard/Dashboard";
 import Register from "./component/Registration/Register";
+import Home from "./component/landingPage/Home";
+import SingleProductPage from "./component/landingPage/SingleProductPage";
 
 export const router = createBrowserRouter([
   {
@@ -11,7 +13,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <h1>THs is the landing page</h1>,
+        element: <Home />,
       },
       {
         path: "list",
@@ -21,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "todo",
         element: <App />,
+      },
+      {
+        path: "product/:id",
+        element: <SingleProductPage />,
       },
     ],
   },
